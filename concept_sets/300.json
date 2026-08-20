@@ -2,11 +2,11 @@
   "id": 300,
   "name": "Tracheostomy tube",
   "description": "Any type of tracheostomy tube device, including fenestrated, cannula components and laryngectomy tubes.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-06-10",
+  "modifiedDate": "2026-08-20",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
@@ -27,6 +27,25 @@
         },
         "isExcluded": false,
         "includeDescendants": true,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 45759423,
+          "conceptName": "Oxygen administration transtracheal catheter",
+          "domainId": "Device",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Physical Object",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "464651008",
+          "validStartDate": "2014-07-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": true,
+        "includeDescendants": false,
         "includeMapped": false
       }
     ]
@@ -53,7 +72,7 @@
         "category": "Ventilation",
         "subcategory": "Airway device",
         "shortDescription": "Any type of tracheostomy tube device, including fenestrated, cannula components and laryngectomy tubes.",
-        "longDescription": "## Definition & Clinical Context\n\nA tracheostomy tube is a tube inserted through a surgical opening in the front of the neck (a stoma) directly into the trachea, bypassing the mouth and larynx to secure the airway. In source data this is a **device** record, not a measurement: each entry identifies the type of tube placed in a patient, with no associated value or unit. It is recorded in intensive care (for patients on prolonged ventilation or with weaning difficulties) and in patients with a long-term or permanent tracheostomy. The variants in this set differ by design (fenestrated vs not, reinforced), by component (inner/outer cannula), or by the specific stoma context (laryngectomy), but all are tracheostomy-route airway devices.\n\n## Included Concepts\n\nThe set is anchored on the single SNOMED device concept *Tracheostomy tube* with all its descendants, so every more specific type resolves automatically (and future SNOMED additions are captured without editing the set). This currently resolves to 10 concepts, grouped here by what distinguishes them.\n\n### Generic tracheostomy tube (default)\n\nUse this when the source records a tracheostomy tube without specifying a type.\n\n- *4044008 / 129121000 — Tracheostomy tube (SNOMED)*: the general device concept; the default for any unspecified tracheostomy tube.\n\n### By design\n\n- *1076472 / 1343696006 — Fenestrated tracheostomy tube (SNOMED)*: has an opening (fenestration) in the outer cannula to allow airflow through the upper airway (e.g. to support speech).\n- *1076494 / 1344664005 — Non-fenestrated tracheostomy tube (SNOMED)*: no fenestration.\n- *45760063 / 465608000 — Reinforced tracheostomy tube (SNOMED)*: wall-reinforced tube resistant to kinking or compression.\n\n### By component (cannula)\n\nA tracheostomy tube assembly has an outer and (often) a removable inner cannula. These concepts identify the cannula component specifically.\n\n- *605799 / 1137710007 — Tracheostomy tube cannula (SNOMED)*: a tracheostomy tube cannula (outer/generic).\n- *1076451 / 1343640004 — Tracheostomy tube inner cannula (SNOMED)*: the removable inner cannula.\n\n### By stoma context / use\n\n- *45758602 / 463384005 — Operative tracheostomy tube (SNOMED)*: tube used for a surgically created tracheostomy.\n- *45772047 / 470610002 — Laryngectomy tube (SNOMED)*: tube for a patient whose larynx has been removed (permanent stoma).\n- *36713922 / 718933007 — Laryngectomy tube, non-sterile (SNOMED)*: non-sterile laryngectomy tube variant.\n- *45759423 / 464651008 — Oxygen administration transtracheal catheter (SNOMED)*: a thin catheter delivering oxygen directly into the trachea via a stoma; filed under this hierarchy in SNOMED, though it is a transtracheal oxygen device rather than a full tracheostomy tube.\n\n## Mapping Notes\n\n- **Default concept** when the source records a tracheostomy tube without a specific type: *4044008 / 129121000 — Tracheostomy tube*. Do not infer a specific variant from indirect clues — if the type is not documented, map to the generic concept.\n- **Endotracheal tubes are a separate device** and do not belong here; they have their own concept set. A tracheostomy tube enters through a surgical neck stoma; an endotracheal tube passes through the mouth or nose and the larynx.\n- **This set is about the device, not the act**: creating the tracheostomy, inserting, changing or removing the tube are procedures captured in their own concept sets, not here.\n- **Cannula components**: *605799 / 1137710007 — Tracheostomy tube cannula* and *1076451 / 1343640004 — Tracheostomy tube inner cannula* identify a cannula part rather than a complete tube; map to these only when the source explicitly records the cannula component."
+        "longDescription": "## Definition & Clinical Context\n\nA tracheostomy tube is a tube inserted through a surgical opening in the front of the neck (a stoma) directly into the trachea, bypassing the mouth and larynx to secure the airway. In source data this is a **device** record, not a measurement: each entry identifies the type of tube placed in a patient, with no associated value or unit. It is recorded in intensive care (for patients on prolonged ventilation or with weaning difficulties) and in patients with a long-term or permanent tracheostomy. The variants in this set differ by design (fenestrated vs not, reinforced), by component (inner/outer cannula), or by the specific stoma context (laryngectomy), but all are tracheostomy-route airway devices.\n\n## Included Concepts\n\nThe set is anchored on the single SNOMED device concept *Tracheostomy tube* with all its descendants, so every more specific type resolves automatically (and future SNOMED additions are captured without editing the set). This currently resolves to 9 concepts, grouped here by what distinguishes them.\n\n### Generic tracheostomy tube (default)\n\nUse this when the source records a tracheostomy tube without specifying a type.\n\n- *4044008 / 129121000 — Tracheostomy tube (SNOMED)*: the general device concept; the default for any unspecified tracheostomy tube.\n\n### By design\n\n- *1076472 / 1343696006 — Fenestrated tracheostomy tube (SNOMED)*: has an opening (fenestration) in the outer cannula to allow airflow through the upper airway (e.g. to support speech).\n- *1076494 / 1344664005 — Non-fenestrated tracheostomy tube (SNOMED)*: no fenestration.\n- *45760063 / 465608000 — Reinforced tracheostomy tube (SNOMED)*: wall-reinforced tube resistant to kinking or compression.\n\n### By component (cannula)\n\nA tracheostomy tube assembly has an outer and (often) a removable inner cannula. These concepts identify the cannula component specifically.\n\n- *605799 / 1137710007 — Tracheostomy tube cannula (SNOMED)*: a tracheostomy tube cannula (outer/generic).\n- *1076451 / 1343640004 — Tracheostomy tube inner cannula (SNOMED)*: the removable inner cannula.\n\n### By stoma context / use\n\n- *45758602 / 463384005 — Operative tracheostomy tube (SNOMED)*: tube used for a surgically created tracheostomy.\n- *45772047 / 470610002 — Laryngectomy tube (SNOMED)*: tube for a patient whose larynx has been removed (permanent stoma).\n- *36713922 / 718933007 — Laryngectomy tube, non-sterile (SNOMED)*: non-sterile laryngectomy tube variant.\n\n## Excluded Concepts\n\n- *45759423 / 464651008 — Oxygen administration transtracheal catheter (SNOMED)*: excluded. SNOMED files it under *Tracheostomy tube*, but its other parents are *Pulmonological catheter* and *Catheter*: it is a thin catheter delivering oxygen into the trachea through a stoma for long-term oxygen therapy, not a tracheostomy tube. It is also evidence of chronic oxygen therapy rather than of invasive ventilation, which this set helps establish.\n\n## Mapping Notes\n\n- **Default concept** when the source records a tracheostomy tube without a specific type: *4044008 / 129121000 — Tracheostomy tube*. Do not infer a specific variant from indirect clues — if the type is not documented, map to the generic concept.\n- **Endotracheal tubes are a separate device** and do not belong here; they have their own concept set. A tracheostomy tube enters through a surgical neck stoma; an endotracheal tube passes through the mouth or nose and the larynx.\n- **This set is about the device, not the act**: creating the tracheostomy, inserting, changing or removing the tube are procedures captured in their own concept sets, not here.\n- **Cannula components**: *605799 / 1137710007 — Tracheostomy tube cannula* and *1076451 / 1343640004 — Tracheostomy tube inner cannula* identify a cannula part rather than a complete tube; map to these only when the source explicitly records the cannula component."
       },
       "fr": {
         "name": "Canule de trachéotomie",
@@ -97,6 +116,19 @@
         "reviewTimestamp": "2026-08-20T17:00:00.000Z",
         "comments": "Reply to Maxim Moinat's review. Not to study the type of tube: the Mapping Notes already send an unqualified tube to the generic concept, and the variants only exist so that sources recording a type have somewhere to map. The purpose is reconstructing the real period of invasive ventilation. In clinical data warehouses the invasive-ventilation concept is often a prescription rather than an observation, entered late and left open because nobody discontinued it, so the period is wrong at both ends. We plan to derive it from converging signals: ventilation parameters (tidal volume, PEEP and the rest) and the presence of an airway device. That is also why this is not redundant with concept set 356: creating the tracheostomy is a one-off procedure, whereas the device exposure spans the whole time the tube is in place.",
         "version": "1.1.0"
+      },
+      {
+        "reviewId": 3,
+        "reviewer": {
+          "firstName": "Boris",
+          "lastName": "Delange",
+          "affiliation": "Univ Rennes, CHU Rennes, INSERM, LTSI-UMR 1099, Rennes, France",
+          "profession": "Medical Informatics and Intensive Care Physician",
+          "orcid": "0009-0002-6055-6935"
+        },
+        "reviewTimestamp": "2026-08-20T17:20:00.000Z",
+        "comments": "Separately from the review above: 45759423 Oxygen administration transtracheal catheter is now excluded. SNOMED files it under Tracheostomy tube, but it is a catheter for long-term oxygen therapy through a stoma, not a tracheostomy tube, and it came in through the descendants branch. Resolves to 9.",
+        "version": "1.2.0"
       }
     ],
     "versions": [
@@ -105,6 +137,12 @@
         "date": "2026-06-10",
         "author": "Boris Delange",
         "message": "Simplify definition: replace the flat list of 6 device variants with a single anchor on Tracheostomy tube (4044008) + includeDescendants (resolves to 10, adding laryngectomy tube, operative and reinforced tracheostomy tubes, and the transtracheal oxygen catheter). Added clinical description."
+      },
+      {
+        "version": "1.2.0",
+        "date": "2026-08-20",
+        "author": "Boris Delange",
+        "message": "Exclude 45759423 Oxygen administration transtracheal catheter. SNOMED files it under Tracheostomy tube, but its other parents are Pulmonological catheter and Catheter: it is a thin catheter delivering oxygen through a stoma for long-term home oxygen therapy, not a tracheostomy tube. It arrived through the descendants branch. Resolves to 9."
       }
     ],
     "distributionStats": null
