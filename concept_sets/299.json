@@ -84,6 +84,19 @@
         "status": "needs_revision",
         "comments": "Unclear what the added benefit is over the intubation procedure in concept set 305 (Endotracheal intubation), i.e. are we going to study the type of tube? In that case we need one concept set per type of tube of interest.",
         "version": "1.1.0"
+      },
+      {
+        "reviewId": 2,
+        "reviewer": {
+          "firstName": "Boris",
+          "lastName": "Delange",
+          "affiliation": "Univ Rennes, CHU Rennes, INSERM, LTSI-UMR 1099, Rennes, France",
+          "profession": "Medical Informatics and Intensive Care Physician",
+          "orcid": "0009-0002-6055-6935"
+        },
+        "reviewTimestamp": "2026-08-20T17:00:00.000Z",
+        "comments": "Reply to Maxim Moinat's review. Not to study the type of tube: the Mapping Notes already send an unqualified tube to the generic concept, and the variants only exist so that sources recording a type have somewhere to map. The purpose is reconstructing the real period of invasive ventilation. In clinical data warehouses the invasive-ventilation concept is often a prescription rather than an observation, entered late and left open because nobody discontinued it, so the period is wrong at both ends. We plan to derive it from converging signals: ventilation parameters (tidal volume, PEEP and the rest) and the presence of an airway device. That is also why this is not redundant with concept set 305: intubation is a brief act, and its duration, when recorded at all, is the duration of the gesture rather than of the ventilation, whereas the device exposure spans the whole time the tube is in place.",
+        "version": "1.1.0"
       }
     ],
     "versions": [
