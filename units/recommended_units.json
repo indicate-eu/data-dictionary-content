@@ -36311,6 +36311,17 @@
     "recommendedUnitVocabularyId": "UCUM"
   },
   {
+    "conceptId": 21490587,
+    "conceptName": "Arterial blood temperature",
+    "conceptCode": "60835-6",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 586323,
+    "recommendedUnitName": "degree Celsius",
+    "recommendedUnitCode": "Cel",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
     "conceptId": 21490588,
     "conceptName": "Esophageal temperature",
     "conceptCode": "60836-4",
@@ -36336,6 +36347,17 @@
     "conceptId": 21490688,
     "conceptName": "Body surface temperature",
     "conceptCode": "61008-9",
+    "vocabularyId": "LOINC",
+    "domainId": "Measurement",
+    "recommendedUnitConceptId": 586323,
+    "recommendedUnitName": "degree Celsius",
+    "recommendedUnitCode": "Cel",
+    "recommendedUnitVocabularyId": "UCUM"
+  },
+  {
+    "conceptId": 21490769,
+    "conceptName": "Venous blood temperature",
+    "conceptCode": "75987-8",
     "vocabularyId": "LOINC",
     "domainId": "Measurement",
     "recommendedUnitConceptId": 586323,

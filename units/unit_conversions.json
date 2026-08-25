@@ -5100,6 +5100,30 @@
     "targetUnitName": "degree Fahrenheit"
   },
   {
+    "conceptId": 21490587,
+    "conceptName": "Arterial blood temperature",
+    "sourceUnitConceptId": 9289,
+    "sourceUnitCode": "[degF]",
+    "sourceUnitName": "degree Fahrenheit",
+    "conversionFactor": 0.555556,
+    "offset": -17.777778,
+    "targetUnitConceptId": 586323,
+    "targetUnitCode": "Cel",
+    "targetUnitName": "degree Celsius"
+  },
+  {
+    "conceptId": 21490587,
+    "conceptName": "Arterial blood temperature",
+    "sourceUnitConceptId": 586323,
+    "sourceUnitCode": "Cel",
+    "sourceUnitName": "degree Celsius",
+    "conversionFactor": 1.8,
+    "offset": 32,
+    "targetUnitConceptId": 9289,
+    "targetUnitCode": "[degF]",
+    "targetUnitName": "degree Fahrenheit"
+  },
+  {
     "conceptId": 21490588,
     "conceptName": "Esophageal temperature",
     "sourceUnitConceptId": 9289,
@@ -5162,6 +5186,30 @@
   {
     "conceptId": 21490688,
     "conceptName": "Body surface temperature",
+    "sourceUnitConceptId": 586323,
+    "sourceUnitCode": "Cel",
+    "sourceUnitName": "degree Celsius",
+    "conversionFactor": 1.8,
+    "offset": 32,
+    "targetUnitConceptId": 9289,
+    "targetUnitCode": "[degF]",
+    "targetUnitName": "degree Fahrenheit"
+  },
+  {
+    "conceptId": 21490769,
+    "conceptName": "Venous blood temperature",
+    "sourceUnitConceptId": 9289,
+    "sourceUnitCode": "[degF]",
+    "sourceUnitName": "degree Fahrenheit",
+    "conversionFactor": 0.555556,
+    "offset": -17.777778,
+    "targetUnitConceptId": 586323,
+    "targetUnitCode": "Cel",
+    "targetUnitName": "degree Celsius"
+  },
+  {
+    "conceptId": 21490769,
+    "conceptName": "Venous blood temperature",
     "sourceUnitConceptId": 586323,
     "sourceUnitCode": "Cel",
     "sourceUnitName": "degree Celsius",

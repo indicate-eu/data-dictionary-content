@@ -1,110 +1,15 @@
 {
   "id": 330,
   "name": "Body temperature",
-  "description": "Body temperature — the patient's temperature measured at any anatomical site (oral, rectal, axillary, tympanic, core, skin, etc.); reported in °C or °F.",
-  "version": "1.1.3",
+  "description": "Body temperature — core body temperature and its accepted proxies, measured at any site used to estimate whole-body temperature (oesophageal, bladder, blood, rectal, tympanic, oral, axillary, etc.); reported in °C or °F.",
+  "version": "1.2.0",
   "createdBy": "Boris Delange",
   "createdDate": "2026-02-12",
   "modifiedBy": "Boris Delange",
-  "modifiedDate": "2026-08-14",
+  "modifiedDate": "2026-08-25",
   "createdByTool": "INDICATE Data Dictionary (Web) v1.0.0",
   "expression": {
     "items": [
-      {
-        "concept": {
-          "conceptId": 1259509,
-          "conceptName": "Body temperature - Groin",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "104063-3",
-          "validStartDate": "2024-02-27",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1988377,
-          "conceptName": "Body temperature - Hand surface",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "98657-0",
-          "validStartDate": "2022-02-16",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 1989404,
-          "conceptName": "Body temperature - Foot surface",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "98663-8",
-          "validStartDate": "2022-02-16",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 3006322,
-          "conceptName": "Oral temperature",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "8331-1",
-          "validStartDate": "1996-09-06",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 3007416,
-          "conceptName": "Body temperature - Intravascular",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "8330-3",
-          "validStartDate": "1996-09-06",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
       {
         "concept": {
           "conceptId": 3020891,
@@ -126,16 +31,16 @@
       },
       {
         "concept": {
-          "conceptId": 3022060,
-          "conceptName": "Rectal temperature",
+          "conceptId": 4302666,
+          "conceptName": "Body temperature",
           "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Observable Entity",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "8332-9",
-          "validStartDate": "1996-09-06",
-          "validEndDate": "2099-12-31",
+          "conceptCode": "386725007",
+          "validStartDate": "20030131",
+          "validEndDate": "20991231",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
@@ -145,34 +50,15 @@
       },
       {
         "concept": {
-          "conceptId": 3025085,
-          "conceptName": "Axillary temperature",
+          "conceptId": 4174894,
+          "conceptName": "Core body temperature",
           "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Observable Entity",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "8328-7",
-          "validStartDate": "1996-09-06",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 3025704,
-          "conceptName": "Body temperature - Urinary bladder",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "8334-5",
-          "validStartDate": "1996-09-06",
+          "conceptCode": "276885007",
+          "validStartDate": "2002-01-31",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
@@ -202,101 +88,6 @@
       },
       {
         "concept": {
-          "conceptId": 3032679,
-          "conceptName": "Body temperature --after transfusion reaction",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "50400-1",
-          "validStartDate": "2007-09-27",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 3039856,
-          "conceptName": "Temperature of Skin",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "39106-0",
-          "validStartDate": "1970-01-01",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21490584,
-          "conceptName": "Finger temperature",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "60830-7",
-          "validStartDate": "2016-06-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21490585,
-          "conceptName": "Toe temperature",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "60833-1",
-          "validStartDate": "2016-06-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 21490586,
-          "conceptName": "Blood temperature",
-          "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "60834-9",
-          "validStartDate": "2016-06-24",
-          "validEndDate": "2099-12-31",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": false,
-        "includeDescendants": false,
-        "includeMapped": false
-      },
-      {
-        "concept": {
           "conceptId": 21490588,
           "conceptName": "Esophageal temperature",
           "domainId": "Measurement",
@@ -316,15 +107,15 @@
       },
       {
         "concept": {
-          "conceptId": 21490590,
-          "conceptName": "Nasopharyngeal temperature",
+          "conceptId": 4333349,
+          "conceptName": "Temperature of esophagus",
           "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Observable Entity",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "60838-0",
-          "validStartDate": "2016-06-24",
+          "conceptCode": "431598003",
+          "validStartDate": "2008-07-31",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
@@ -335,15 +126,15 @@
       },
       {
         "concept": {
-          "conceptId": 21490688,
-          "conceptName": "Body surface temperature",
+          "conceptId": 3025704,
+          "conceptName": "Body temperature - Urinary bladder",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
           "conceptClassId": "Clinical Observation",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "61008-9",
-          "validStartDate": "2016-06-24",
+          "conceptCode": "8334-5",
+          "validStartDate": "1996-09-06",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
@@ -373,15 +164,167 @@
       },
       {
         "concept": {
-          "conceptId": 21490906,
-          "conceptName": "Nasal temperature",
+          "conceptId": 44782835,
+          "conceptName": "Core body temperature measured at urinary bladder",
+          "domainId": "Measurement",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Observable Entity",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "698832009",
+          "validStartDate": "2014-01-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 21490586,
+          "conceptName": "Blood temperature",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
           "conceptClassId": "Clinical Observation",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "76010-8",
+          "conceptCode": "60834-9",
           "validStartDate": "2016-06-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 21490587,
+          "conceptName": "Arterial blood temperature",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "60835-6",
+          "validStartDate": "2016-06-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 21490769,
+          "conceptName": "Venous blood temperature",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "75987-8",
+          "validStartDate": "2016-06-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 3007416,
+          "conceptName": "Body temperature - Intravascular",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "8330-3",
+          "validStartDate": "1996-09-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 37164002,
+          "conceptName": "Core body temperature measured in blood",
+          "domainId": "Measurement",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Observable Entity",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "1222808002",
+          "validStartDate": "2022-05-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 3022060,
+          "conceptName": "Rectal temperature",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "8332-9",
+          "validStartDate": "1996-09-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 4143731,
+          "conceptName": "Rectal temperature",
+          "domainId": "Measurement",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Observable Entity",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "307047009",
+          "validStartDate": "2002-01-31",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 4215364,
+          "conceptName": "Tympanic temperature",
+          "domainId": "Measurement",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Observable Entity",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "415974002",
+          "validStartDate": "2005-01-31",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
@@ -411,15 +354,15 @@
       },
       {
         "concept": {
-          "conceptId": 21493955,
-          "conceptName": "Temperature of Extremity",
+          "conceptId": 4239770,
+          "conceptName": "Temperature of pinna",
           "domainId": "Measurement",
-          "vocabularyId": "LOINC",
-          "conceptClassId": "Clinical Observation",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Observable Entity",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "81673-6",
-          "validStartDate": "2016-06-24",
+          "conceptCode": "363997004",
+          "validStartDate": "2002-01-31",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
@@ -430,15 +373,34 @@
       },
       {
         "concept": {
-          "conceptId": 37019573,
-          "conceptName": "Body temperature - Brain",
+          "conceptId": 3006322,
+          "conceptName": "Oral temperature",
           "domainId": "Measurement",
           "vocabularyId": "LOINC",
           "conceptClassId": "Clinical Observation",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "91371-5",
-          "validStartDate": "2019-06-21",
+          "conceptCode": "8331-1",
+          "validStartDate": "1996-09-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 4218834,
+          "conceptName": "Oral temperature",
+          "domainId": "Measurement",
+          "vocabularyId": "SNOMED",
+          "conceptClassId": "Observable Entity",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "415945006",
+          "validStartDate": "2005-01-31",
           "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
@@ -468,135 +430,211 @@
       },
       {
         "concept": {
-          "conceptId": 4302666,
-          "conceptName": "Body temperature",
+          "conceptId": 21490590,
+          "conceptName": "Nasopharyngeal temperature",
           "domainId": "Measurement",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Observable Entity",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "386725007",
-          "validStartDate": "20030131",
-          "validEndDate": "20991231",
+          "conceptCode": "60838-0",
+          "validStartDate": "2016-06-24",
+          "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
         "isExcluded": false,
-        "includeDescendants": true,
+        "includeDescendants": false,
         "includeMapped": false
       },
       {
         "concept": {
-          "conceptId": 44809207,
-          "conceptName": "Target body temperature",
+          "conceptId": 44782834,
+          "conceptName": "Nasopharyngeal temperature",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Observable Entity",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "852581000000105",
-          "validStartDate": "20121001",
-          "validEndDate": "20991231",
+          "conceptCode": "698831002",
+          "validStartDate": "2014-01-31",
+          "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
-        "isExcluded": true,
-        "includeDescendants": true,
+        "isExcluded": false,
+        "includeDescendants": false,
         "includeMapped": false
       },
       {
         "concept": {
-          "conceptId": 44809208,
-          "conceptName": "Maximum body temperature",
+          "conceptId": 21490906,
+          "conceptName": "Nasal temperature",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "76010-8",
+          "validStartDate": "2016-06-24",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 3025085,
+          "conceptName": "Axillary temperature",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "8328-7",
+          "validStartDate": "1996-09-06",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 4188706,
+          "conceptName": "Axillary temperature",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Observable Entity",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "852591000000107",
-          "validStartDate": "20121001",
-          "validEndDate": "20991231",
+          "conceptCode": "415882003",
+          "validStartDate": "2005-01-31",
+          "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
-        "isExcluded": true,
-        "includeDescendants": true,
+        "isExcluded": false,
+        "includeDescendants": false,
         "includeMapped": false
       },
       {
         "concept": {
-          "conceptId": 44813868,
-          "conceptName": "Minimum body temperature",
+          "conceptId": 4212763,
+          "conceptName": "Forehead temperature",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Observable Entity",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "852601000000101",
-          "validStartDate": "20121001",
-          "validEndDate": "20991231",
+          "conceptCode": "415922000",
+          "validStartDate": "2005-01-31",
+          "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
-        "isExcluded": true,
-        "includeDescendants": true,
+        "isExcluded": false,
+        "includeDescendants": false,
         "includeMapped": false
       },
       {
         "concept": {
-          "conceptId": 45769775,
-          "conceptName": "Temperature of neonate at birth",
+          "conceptId": 1259509,
+          "conceptName": "Body temperature - Groin",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "104063-3",
+          "validStartDate": "2024-02-27",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 4189949,
+          "conceptName": "Groin temperature",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Observable Entity",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "708499008",
-          "validStartDate": "20150131",
-          "validEndDate": "20991231",
+          "conceptCode": "415929009",
+          "validStartDate": "2005-01-31",
+          "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
-        "isExcluded": true,
-        "includeDescendants": true,
+        "isExcluded": false,
+        "includeDescendants": false,
         "includeMapped": false
       },
       {
         "concept": {
-          "conceptId": 4113386,
-          "conceptName": "Basal body temperature",
+          "conceptId": 37019573,
+          "conceptName": "Body temperature - Brain",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "91371-5",
+          "validStartDate": "2019-06-21",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 3032679,
+          "conceptName": "Body temperature --after transfusion reaction",
+          "domainId": "Measurement",
+          "vocabularyId": "LOINC",
+          "conceptClassId": "Clinical Observation",
+          "standardConcept": "S",
+          "standardConceptCaption": "Standard",
+          "conceptCode": "50400-1",
+          "validStartDate": "2007-09-27",
+          "validEndDate": "2099-12-31",
+          "invalidReason": null,
+          "invalidReasonCaption": "Valid"
+        },
+        "isExcluded": false,
+        "includeDescendants": false,
+        "includeMapped": false
+      },
+      {
+        "concept": {
+          "conceptId": 4329518,
+          "conceptName": "Body temperature taken with digital thermometer",
           "domainId": "Measurement",
           "vocabularyId": "SNOMED",
           "conceptClassId": "Observable Entity",
           "standardConcept": "S",
           "standardConceptCaption": "Standard",
-          "conceptCode": "300076005",
-          "validStartDate": "20020131",
-          "validEndDate": "20991231",
+          "conceptCode": "431807005",
+          "validStartDate": "2008-07-31",
+          "validEndDate": "2099-12-31",
           "invalidReason": null,
           "invalidReasonCaption": "Valid"
         },
-        "isExcluded": true,
-        "includeDescendants": true,
-        "includeMapped": false
-      },
-      {
-        "concept": {
-          "conceptId": 4086670,
-          "conceptName": "Comparative temperature in limbs",
-          "domainId": "Measurement",
-          "vocabularyId": "SNOMED",
-          "conceptClassId": "Observable Entity",
-          "standardConcept": "S",
-          "standardConceptCaption": "Standard",
-          "conceptCode": "248458005",
-          "validStartDate": "20020131",
-          "validEndDate": "20991231",
-          "invalidReason": null,
-          "invalidReasonCaption": "Valid"
-        },
-        "isExcluded": true,
-        "includeDescendants": true,
+        "isExcluded": false,
+        "includeDescendants": false,
         "includeMapped": false
       }
     ]
@@ -622,14 +660,14 @@
         "name": "Body temperature",
         "category": "Vital signs",
         "subcategory": "Other vitals",
-        "shortDescription": "Body temperature — the patient's temperature measured at any anatomical site (oral, rectal, axillary, tympanic, core, skin, etc.); reported in °C or °F.",
-        "longDescription": "## Definition & Clinical Context\n\nBody temperature is the patient's internal or surface temperature, the cardinal vital sign used to detect fever (pyrexia) and low temperature (hypothermia). Measuring it produces a numeric value reported in degrees Celsius (°C) or degrees Fahrenheit (°F), obtained with a thermometer or temperature probe at one of many anatomical sites. The reading depends heavily on the site: \"core\" sites (oesophageal, bladder, intravascular/blood, rectal) approximate true central temperature, whereas surface and peripheral sites (axillary, skin, forehead, limbs) read lower and are used for convenience or continuous monitoring. Body temperature is recorded in every clinical setting and monitored continuously in the intensive care unit (e.g., bladder or oesophageal probes, and during targeted temperature management).\n\nThis concept set captures **numeric body-temperature values at any site**. It deliberately spans core, oral, rectal, axillary, tympanic/ear, surface/skin and limb sites so that a single variable holds the patient's temperature regardless of how it was taken; the site is preserved by the specific concept chosen.\n\n## Included Concepts\n\nThis concept set contains 65 standard concepts (LOINC + SNOMED). On the SNOMED side it is anchored on *4302666 / 386725007 — Body temperature (SNOMED)* with all its descendant measurement sites included; the LOINC side is a curated list (the LOINC body-temperature hierarchy is too fragmented to anchor cleanly). Because there are many near-equivalent site concepts across the two vocabularies, the groups below describe the sites rather than enumerate every code. The default for an unqualified temperature is *3020891 / 8310-5 — Body temperature (LOINC)* or *4302666 / 386725007 — Body temperature (SNOMED)*.\n\n### Generic body temperature\n\n- *3020891 / 8310-5 — Body temperature (LOINC)* and *4302666 / 386725007 — Body temperature (SNOMED)*: The generic body temperature, no site specified. Default mapping target when the source does not state where the temperature was taken.\n- *4329518 / 431807005 — Body temperature taken with digital thermometer (SNOMED)*: Generic temperature qualified only by the device (digital thermometer), no site.\n\n### Core / internal temperature\n\nSites that approximate true central body temperature.\n\n- *3025926 / 8329-5 — Body temperature - Core (LOINC)* and *4174894 / 276885007 — Core body temperature (SNOMED)*: Core temperature, site unspecified.\n- *3022060 / 8332-9 — Rectal temperature (LOINC)* / *4143731 / 307047009 — Rectal temperature (SNOMED)*: Rectal probe.\n- *21490588 / 60836-4 — Esophageal temperature (LOINC)* / *4333349 / 431598003 — Temperature of esophagus (SNOMED)*: Oesophageal probe (common under anaesthesia and in the ICU).\n- *3025704 / 8334-5 — Body temperature - Urinary bladder (LOINC)*, *21490870 / 76278-1 — Bladder temperature via Foley (LOINC)*, *44782835 / 698832009 — Core body temperature measured at urinary bladder (SNOMED)*: Bladder (Foley-catheter thermistor) temperature.\n- *3007416 / 8330-3 — Body temperature - Intravascular (LOINC)*, *21490586 / 60834-9 — Blood temperature (LOINC)*, *37164002 / 1222808002 — Core body temperature measured in blood (SNOMED)*: Intravascular/blood temperature (e.g., from a pulmonary-artery catheter or CRRT circuit).\n- *37019573 / 91371-5 — Body temperature - Brain (LOINC)*: Brain temperature (neuro-ICU probe).\n\n### Oral, tympanic and nasal\n\n- *3006322 / 8331-1 — Oral temperature (LOINC)* / *4218834 / 415945006 — Oral temperature (SNOMED)*: Mouth.\n- *21490907 / 76011-6 — Ear temperature (LOINC)* / *4215364 / 415974002 — Tympanic temperature (SNOMED)* / *4239770 / 363997004 — Temperature of pinna (SNOMED)*: Ear / tympanic (infrared aural thermometer).\n- *21490906 / 76010-8 — Nasal temperature (LOINC)*, *21490590 / 60838-0 — Nasopharyngeal temperature (LOINC)* / *44782834 / 698831002 — Nasopharyngeal temperature (SNOMED)*: Nasal / nasopharyngeal probe.\n\n### Axillary, surface and skin\n\n- *3025085 / 8328-7 — Axillary temperature (LOINC)* / *4188706 / 415882003 — Axillary temperature (SNOMED)*: Armpit.\n- *3039856 / 39106-0 — Temperature of Skin (LOINC)*, *21490688 / 61008-9 — Body surface temperature (LOINC)*, *4265708 / 364537001 — Temperature of skin (SNOMED)*: Skin / body-surface temperature.\n- *4212763 / 415922000 — Forehead temperature (SNOMED)* and *4215353 / 415921007 — Forehead skin strip temperature (SNOMED)*: Forehead (infrared or liquid-crystal strip).\n- *46235152 / 75539-7 — Body temperature - Temporal artery (LOINC)*: Temporal-artery (forehead-scanner) temperature.\n- *1259509 / 104063-3 — Body temperature - Groin (LOINC)* / *4189949 / 415929009 — Groin temperature (SNOMED)*, *4088771 / 248835004 — Breast temperature (SNOMED)*.\n\n### Limb and peripheral sites\n\n- *21490584 / 60830-7 — Finger temperature (LOINC)*, *21490585 / 60833-1 — Toe temperature (LOINC)*, *21493955 / 81673-6 — Temperature of Extremity (LOINC)*, *1988377 / 98657-0 — Body temperature - Hand surface (LOINC)*, *1989404 / 98663-8 — Body temperature - Foot surface (LOINC)*: Peripheral skin temperature of the extremities (the core-to-peripheral gradient is sometimes used as a perfusion indicator).\n- SNOMED limb and joint sites included via the hierarchy: temperature of foot (and left/right foot), toe, digit (and digit of hand), and the joint temperatures (ankle, knee, elbow, wrist, shoulder, finger, thumb, toe joint) — used mainly in localised assessment of a limb.\n- Spinal sites: *4265681 / 364419004 — Cervical spine temperature (SNOMED)*, *4264562 / 364424001 — Thoracic spine temperature (SNOMED)*, *4264564 / 364429006 — Temperature of lumbar spine (SNOMED)*.\n- *4267945 / 364246006 — Temperature of vagina (SNOMED)*.\n\n**Note on units.** The recommended unit is **`Cel`** (OMOP concept 586323 — degree Celsius), listed first by LOINC for these codes and the clinical standard outside the United States. Sources reporting Fahrenheit are converted with an **affine** conversion, not a multiplicative one: `°C = 0.555556 × °F − 17.777778` (and `°F = 1.8 × °C + 32`), which the conversion table stores using its `offset` field. LOINC lists `deg` (a plane angle) as the example unit for the nasal and ear temperature codes 76010-8 and 76011-6, which is an error in the source table; both are recommended in `Cel` here like every other concept of the set.\n\n## Excluded Concepts\n\nThe following descendants of the SNOMED body-temperature hierarchy are excluded because they are not point-in-time measurements:\n\n- *44809207 / 852581000000105 — Target body temperature (SNOMED)*: a goal value (e.g., a targeted-temperature-management set point), not a measurement.\n- *44809208 / 852591000000107 — Maximum body temperature (SNOMED)* and *44813868 / 852601000000101 — Minimum body temperature (SNOMED)*: derived summary statistics over a period.\n- *45769775 / 708499008 — Temperature of neonate at birth (SNOMED)*: encounter-specific (birth) encoding.\n- *4113386 / 300076005 — Basal body temperature (SNOMED)*: fertility-tracking measurement with a distinct protocol, out of scope for a general vital-sign set.\n- *4086670 / 248458005 — Comparative temperature in limbs (SNOMED)*: a comparison between limbs, not an absolute temperature value.\n\nThe `--after transfusion reaction` LOINC variant and similar context-encoded codes are not included; transfusion-reaction context should be captured separately, not within the temperature concept.\n\n## Mapping Notes\n\n- *Default concept*: When the source records a temperature with no site, map to Body temperature (3020891 / 8310-5 — Body temperature, LOINC) or its SNOMED equivalent (4302666 / 386725007 — Body temperature). Do not guess the site.\n- *Site matters*: Map to the site-specific concept when the source states where the temperature was taken (e.g., \"rectal temp\", \"tympanic\", \"bladder temp\", \"skin temp\"). Core sites (oesophageal, bladder, blood, rectal) and surface sites read differently, so preserving the site is important for downstream interpretation.\n- *Continuous ICU probes*: A continuously monitored temperature from a bladder or oesophageal probe maps to the corresponding bladder/oesophageal concept; an arterial/PA-catheter or CRRT blood temperature maps to the intravascular/blood concept.\n- *Common source labels*: \"Temp\", \"T°\", \"BT\" → Body temperature (3020891 / 8310-5 — Body temperature, LOINC). \"Tympanic\", \"Ear temp\" → Ear/Tympanic temperature. \"Rectal\", \"PR temp\" → Rectal temperature (3022060 / 8332-9 — Rectal temperature, LOINC). \"Axillary\", \"Axilla\" → Axillary temperature (3025085 / 8328-7 — Axillary temperature, LOINC). \"Core temp\", \"Bladder temp\", \"Oesophageal temp\" → the matching core concept."
+        "shortDescription": "Body temperature — core body temperature and its accepted proxies, measured at any site used to estimate whole-body temperature (oesophageal, bladder, blood, rectal, tympanic, oral, axillary, etc.); reported in °C or °F.",
+        "longDescription": "## Definition & Clinical Context\n\nBody temperature is the patient's central body temperature, the cardinal vital sign used to detect fever (pyrexia) and hypothermia. Measuring it produces a numeric value reported in degrees Celsius (°C) or degrees Fahrenheit (°F), obtained with a thermometer or temperature probe at one of many anatomical sites. Body temperature is recorded in every clinical setting and monitored continuously in the intensive care unit (e.g., bladder or oesophageal probes, and during targeted temperature management).\n\nThis concept set captures **core body temperature and its accepted proxies** — the sites where the measurement is taken in order to estimate the temperature of the body as a whole, the site being merely an access point. It deliberately **excludes local and peripheral measurements** (skin, extremity, finger, toe, foot, joint), which characterise *that site* rather than the patient: they are taken to assess local inflammation or peripheral perfusion, their distribution depends on the measurement site rather than on the patient, and pooling them with core measurements would produce a variable that cannot be interpreted. An oesophageal temperature of 38.5 °C and a foot-skin temperature of 38.5 °C do not describe the same thing.\n\n**One variable, not one set per site.** Axillary and oral readings underestimate core temperature by roughly 0.3–0.5 °C, yet they remain a single variable here: a research protocol asks for the patient's temperature, not for an axillary temperature specifically. Splitting by site would also assume the site is known, which is often not the case — many source systems record an unqualified temperature. The site is preserved by the specific concept chosen, so a study that needs to stratify or adjust on it still can.\n\n## Included Concepts\n\nThis concept set contains 33 standard concepts (LOINC + SNOMED), enumerated explicitly rather than expanded from a hierarchy: the SNOMED *Body temperature* branch mixes systemic and local measurements (joint, spine, skin, limb sites), so it cannot be used as an anchor with descendants. The default for an unqualified temperature is *3020891 / 8310-5 — Body temperature (LOINC)* or *4302666 / 386725007 — Body temperature (SNOMED)*.\n\n### Generic body temperature\n\n- *3020891 / 8310-5 — Body temperature (LOINC)* and *4302666 / 386725007 — Body temperature (SNOMED)*: The generic body temperature, no site specified. Default mapping target when the source does not state where the temperature was taken.\n- *4174894 / 276885007 — Core body temperature (SNOMED)* and *3025926 / 8329-5 — Body temperature - Core (LOINC)*: Explicitly core temperature, site unspecified.\n\n### Core sites\n\nSites that approximate true central body temperature directly.\n\n- *21490588 / 60836-4 — Esophageal temperature (LOINC)* and *4333349 / 431598003 — Temperature of esophagus (SNOMED)*: Oesophageal probe (common under anaesthesia and in the ICU).\n- *3025704 / 8334-5 — Body temperature - Urinary bladder (LOINC)*, *21490870 / 76278-1 — Bladder temperature via Foley (LOINC)* and *44782835 / 698832009 — Core body temperature measured at urinary bladder (SNOMED)*: Bladder (Foley-catheter thermistor) temperature.\n- *21490586 / 60834-9 — Blood temperature (LOINC)*, *21490587 / 60835-6 — Arterial blood temperature (LOINC)*, *21490769 / 75987-8 — Venous blood temperature (LOINC)*, *3007416 / 8330-3 — Body temperature - Intravascular (LOINC)* and *37164002 / 1222808002 — Core body temperature measured in blood (SNOMED)*: Intravascular and blood temperature. Blood temperature is the reference standard for core temperature, measured by pulmonary-artery catheter or during extracorporeal circulation (CPB, ECMO, CRRT); the arterial and venous variants are included alongside the generic and intravascular codes.\n- *37019573 / 91371-5 — Body temperature - Brain (LOINC)*: Brain temperature from an invasive neuro-ICU probe — a core temperature.\n- *3022060 / 8332-9 — Rectal temperature (LOINC)* and *4143731 / 307047009 — Rectal temperature (SNOMED)*: Rectal probe, the classic bedside core site.\n\n### Core proxies\n\nSites accepted as estimates of core temperature, with a known and modest offset.\n\n- *4215364 / 415974002 — Tympanic temperature (SNOMED)*, *21490907 / 76011-6 — Ear temperature (LOINC)* and *4239770 / 363997004 — Temperature of pinna (SNOMED)*: Ear / tympanic (infrared aural thermometer).\n- *3006322 / 8331-1 — Oral temperature (LOINC)* and *4218834 / 415945006 — Oral temperature (SNOMED)*: Mouth.\n- *46235152 / 75539-7 — Body temperature - Temporal artery (LOINC)*: Temporal-artery (forehead-scanner) temperature.\n- *21490590 / 60838-0 — Nasopharyngeal temperature (LOINC)*, *44782834 / 698831002 — Nasopharyngeal temperature (SNOMED)* and *21490906 / 76010-8 — Nasal temperature (LOINC)*: Nasal / nasopharyngeal probe.\n- *3025085 / 8328-7 — Axillary temperature (LOINC)* and *4188706 / 415882003 — Axillary temperature (SNOMED)*: Armpit.\n- *4212763 / 415922000 — Forehead temperature (SNOMED)*: Forehead (infrared thermometer).\n- *1259509 / 104063-3 — Body temperature - Groin (LOINC)* and *4189949 / 415929009 — Groin temperature (SNOMED)*: Inguinal region. SNOMED 415929009 carries the synonym *\"Estimated core body temperature measured in inguinal region\"*, and the rectal-to-inguinal gap is of the same order as the rectal-to-axillary gap.\n\n### Context and method variants\n\n- *3032679 / 50400-1 — Body temperature --after transfusion reaction (LOINC)*: A body temperature whose LOINC code carries the transfusion-reaction context.\n- *4329518 / 431807005 — Body temperature taken with digital thermometer (SNOMED)*: Generic temperature qualified only by the device, no site.\n\n**Note on units.** The recommended unit is **`Cel`** (OMOP concept 586323 — degree Celsius), listed first by LOINC for these codes and the clinical standard outside the United States. Sources reporting Fahrenheit are converted with an **affine** conversion, not a multiplicative one: `°C = 0.555556 × °F − 17.777778` (and `°F = 1.8 × °C + 32`), which the conversion table stores using its `offset` field. LOINC lists `deg` (a plane angle) as the example unit for the nasal, ear and venous blood temperature codes 76010-8, 76011-6 and 75987-8, which is an error in the source table; all three are recommended in `Cel` here like every other concept of the set.\n\n## Excluded Concepts\n\n**Local and peripheral measurements** are excluded: they characterise the site rather than the patient, and mixing them into a whole-body temperature variable would make it uninterpretable.\n\n- Skin and body surface: *3039856 / 39106-0 — Temperature of Skin (LOINC)*, *4265708 / 364537001 — Temperature of skin (SNOMED)*, *21490688 / 61008-9 — Body surface temperature (LOINC)*, *4215353 / 415921007 — Forehead skin strip temperature (SNOMED)*.\n- Extremities: *21493955 / 81673-6 — Temperature of Extremity (LOINC)*, *1988377 / 98657-0 — Body temperature - Hand surface (LOINC)*, *1989404 / 98663-8 — Body temperature - Foot surface (LOINC)*, *21490584 / 60830-7 — Finger temperature (LOINC)*, *21490585 / 60833-1 — Toe temperature (LOINC)*, and the SNOMED foot, toe and digit sites.\n- Joint temperatures (*4097461 — Joint temperature (SNOMED)* and its shoulder, elbow, wrist, thumb, finger, knee, ankle, foot and toe variants): rheumatology measurements of local inflammation, not a vital sign.\n- Other local SNOMED sites reached only through the hierarchy: breast, vagina, and the cervical, thoracic and lumbar spine temperatures.\n\nThe centre-to-periphery temperature gradient is a real clinical signal (peripheral hypoperfusion), but no INDICATE use case currently requires it; a dedicated peripheral-temperature concept set may be created if one appears.\n\n**Non-measurement concepts** from the SNOMED body-temperature hierarchy are likewise out of scope: *44809207 — Target body temperature* (a goal value, e.g. a targeted-temperature-management set point), *44809208 — Maximum body temperature* and *44813868 — Minimum body temperature* (derived summary statistics over a period), *45769775 — Temperature of neonate at birth* (encounter-specific encoding), *4113386 — Basal body temperature* (fertility-tracking measurement with a distinct protocol) and *4086670 — Comparative temperature in limbs* (a comparison between limbs, not an absolute value). Because the set no longer expands any hierarchy, these are simply not enumerated rather than explicitly excluded.\n\n## Mapping Notes\n\n- *Default concept*: When the source records a temperature with no site, map to Body temperature (3020891 / 8310-5 — Body temperature, LOINC) or its SNOMED equivalent (4302666 / 386725007 — Body temperature). Do not guess the site.\n- *Site matters*: Map to the site-specific concept when the source states where the temperature was taken (e.g., \"rectal temp\", \"tympanic\", \"bladder temp\"). Core sites and proxy sites read differently (axillary and oral underestimate core temperature by roughly 0.3–0.5 °C), so preserving the site lets downstream analyses stratify or adjust.\n- *Continuous ICU probes*: A continuously monitored temperature from a bladder or oesophageal probe maps to the corresponding bladder/oesophageal concept; a PA-catheter, arterial-line, CPB, ECMO or CRRT blood temperature maps to the blood/intravascular concepts (arterial or venous where the source specifies it).\n- *Peripheral temperatures out of scope*: A skin, extremity, finger, toe or foot temperature does **not** belong to this variable, even when it is the only temperature the source records. Leave it unmapped here rather than treating it as the patient's body temperature.\n- *Common source labels*: \"Temp\", \"T°\", \"BT\" → Body temperature (3020891 / 8310-5 — Body temperature, LOINC). \"Tympanic\", \"Ear temp\" → Ear/Tympanic temperature. \"Rectal\", \"PR temp\" → Rectal temperature (3022060 / 8332-9 — Rectal temperature, LOINC). \"Axillary\", \"Axilla\" → Axillary temperature (3025085 / 8328-7 — Axillary temperature, LOINC). \"Core temp\", \"Bladder temp\", \"Oesophageal temp\" → the matching core concept."
       },
       "fr": {
         "name": "Température corporelle",
         "category": "Paramètres vitaux",
         "subcategory": "Autres paramètres vitaux",
-        "shortDescription": "Température corporelle — la température du patient mesurée à n'importe quel site anatomique (orale, rectale, axillaire, tympanique, centrale, cutanée, etc.) ; en °C ou °F.",
+        "shortDescription": "Température corporelle — température centrale et ses substituts admis, mesurée à tout site servant à estimer la température du corps entier (œsophagienne, vésicale, sanguine, rectale, tympanique, orale, axillaire, etc.) ; en °C ou °F.",
         "longDescription": null
       }
     },
@@ -680,6 +718,12 @@
         "date": "2026-08-14",
         "author": "Boris Delange",
         "message": "Drop includeMapped: it only pulled in non-standard SNOMED concepts (363816005, 276535009, 1942004, 363815009) alongside the standard concepts they map to. Resolves to 61."
+      },
+      {
+        "version": "1.2.0",
+        "date": "2026-08-25",
+        "author": "Boris Delange",
+        "message": "Restrict the set to core body temperature and its accepted proxies, following Maxim Moinat's review. Drop the local and peripheral measurements (skin, body surface, extremity, finger, toe, hand/foot surface, forehead strip) and the unintended SNOMED descendants (10 joint temperatures, breast, vagina, cervical/thoracic/lumbar spine, foot/toe/digit): their distributions depend on the measurement site rather than on the patient, so pooling them with core sites made the variable uninterpretable. Add the missing Arterial (21490587) and Venous (21490769) blood temperature LOINC concepts — blood temperature is a core temperature and both variants exist as standard concepts, unreachable from the SNOMED anchor. Enumerate all 33 concepts explicitly and drop includeDescendants on 4302666, since the SNOMED branch mixes systemic and local sites and cannot be anchored cleanly; the six exclusion items become unnecessary and are removed. Resolves to 33 (was 61)."
       }
     ],
     "distributionStats": null
